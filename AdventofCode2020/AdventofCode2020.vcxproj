@@ -141,9 +141,12 @@
   <ItemGroup>
     <ClCompile Include="AdventofCode2020.cpp" />
     <ClCompile Include="DayOne.cpp" />
+    <ClCompile Include="DayTwo.cpp" />
+    <ClCompile Include="Helpers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DayOne.h" />
+    <ClInclude Include="DayTwo.h" />
     <ClInclude Include="Helpers.h" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +156,8 @@
     <Text Include="2020.01.txt">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
     </Text>
+    <Text Include="2020.02.test.txt" />
+    <Text Include="2020.02.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
