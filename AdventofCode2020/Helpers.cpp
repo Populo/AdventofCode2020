@@ -20,14 +20,14 @@ vector<string> Helpers::CleanUpDayFour(vector<string> input) {
 
     vector<string>::iterator it;
 
-    string current = "";
+    string current;
     for (it = input.begin(); it < input.end(); ++it) {
         if (*it == "") {
             cleaned.push_back(current);
             current = "";
         }
         else {
-            if (current == "") current += *it;
+            if (current.empty()) current += *it;
             else {
                 current += " ";
                 current += *it;
@@ -36,7 +36,7 @@ vector<string> Helpers::CleanUpDayFour(vector<string> input) {
     }
 
     // handle last one
-    if (current != "") cleaned.push_back(current);
+    if (!current.empty()) cleaned.push_back(current);
 
     return cleaned;
 }
