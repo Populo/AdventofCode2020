@@ -27,6 +27,9 @@
     <ClCompile Include="Helpers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DayThree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DayOne.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DayTwo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DayThree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,6 +56,12 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="2020.02.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="2020.03.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="2020.03.test.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
