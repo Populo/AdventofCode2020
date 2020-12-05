@@ -7,8 +7,16 @@ vector<string> Helpers::ReadFile(string fileName) {
 
     ifstream file(fileName);
     string line;
+    string::iterator sit;
+    string cleanStr = "";
     while (getline(file, line)) {
-        input.push_back(line);
+		for (sit = line.begin(); sit < line.end(); ++sit) // day 5 has garbage in input for some reason :(
+		{
+            int charId = (int)*sit;
+            if (charId >= 0) cleanStr += *sit;
+		}
+        input.push_back(cleanStr);
+        cleanStr = "";
     }
     file.close();
 

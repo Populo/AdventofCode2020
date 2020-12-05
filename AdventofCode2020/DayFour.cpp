@@ -19,7 +19,7 @@ bool DayFour::ProcessPassport(string in) {
     */
 
     regex eclRegex("(ecl:){1}(amb|blu|brn|gry|grn|hzl|oth){1}"),
-        pidRegex("(pid:){1}([0-9]){9}(?![0-9])"), // lol space to stop at length 9
+        pidRegex("(pid:){1}([0-9]){9}(?![0-9])"),
         eyrRegex("(eyr:){1}(20){1}([0-9]){2}"),
         hclRegex("(hcl:{1,1})(#)([0-9]|[a-f]){6}"),
         iyrRegex("(iyr:){1}(20){1}([0-9]){2}"),

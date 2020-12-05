@@ -4,9 +4,9 @@
 #include <iostream>
 #include <algorithm>
 #include "Helpers.h"
-#include "DayFour.h"
+#include "DayFive.h"
 
-string year = "2020", day = "04";
+string year = "2020", day = "05";
 
 using namespace std;
 
@@ -14,10 +14,10 @@ int main()
 {
     cout << "Year: " << year << " Day: " << day << endl;
     Helpers h;
-    DayFour d;
+    DayFive d;
     string fileName = year + "." + day + ".txt";
     vector<string> input = h.ReadFile(fileName);
-    input = h.CleanUpDayFour(input);
+    //input = h.CleanUpDayFour(input);
     //vector<int> inputInt = h.ConvertToInt(input);
     // sort
     //sort(inputInt.begin(), inputInt.end());

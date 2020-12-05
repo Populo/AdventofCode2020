@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AdventofCode2020.cpp" />
+    <ClCompile Include="DayFive.cpp" />
     <ClCompile Include="DayFour.cpp" />
     <ClCompile Include="DayOne.cpp" />
     <ClCompile Include="DayThree.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="Helpers.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DayFive.h" />
     <ClInclude Include="DayFour.h" />
     <ClInclude Include="DayOne.h" />
     <ClInclude Include="DayThree.h" />
@@ -166,6 +168,12 @@
     <Text Include="2020.03.txt" />
     <Text Include="2020.04.test.txt" />
     <Text Include="2020.04.txt" />
+    <Text Include="2020.05.test.txt" />
+    <Text Include="2020.05.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2020.05.test.txt" />
+    <Content Include="2020.05.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
