@@ -60,7 +60,7 @@ int DayFive::PartTwo(vector<string> input)
 
     int p = 0, c = 0;
 	
-	for(it = seatIDs.begin() + 1; it < seatIDs.end() - 2; ++it)
+	for(it = seatIDs.begin() + 1; it < seatIDs.end() - 1; ++it)
 	{
         p = *(it - 1);
         c = *(it);
