@@ -23,6 +23,7 @@ vector<string> Helpers::ReadFile(string fileName) {
     return input;
 }
 
+// can also be used for day 6
 vector<string> Helpers::CleanUpDayFour(vector<string> input) {
     vector<string> cleaned;
 
@@ -59,5 +60,28 @@ vector<int> Helpers::ConvertToInt(vector<string> s) {
     }
 
     return i;
+}
+
+// dear god have mercy on my soul
+vector<string> Helpers::SplitOnChar(string s, char delim)
+{
+    vector<string> out;
+    string cur = "";
+
+	for(auto it = s.begin(); it < s.end(); ++it)
+	{
+		if (*it == delim)
+		{
+            out.push_back(cur);
+            cur = "";
+		} else
+		{
+            cur += *it;
+		}
+	}
+
+    out.push_back(cur);
+	
+    return out;
 }
 

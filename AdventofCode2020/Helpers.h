@@ -10,4 +10,5 @@ public:
 	vector<string> ReadFile(string file);
 	vector<string> CleanUpDayFour(vector<string> input);
 	vector<int> ConvertToInt(vector<string> s);
+	vector<string> SplitOnChar(std::string s, char delim);
 };
